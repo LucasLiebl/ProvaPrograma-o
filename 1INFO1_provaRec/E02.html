@@ -1,0 +1,20 @@
+<script>
+    //Problema
+    /*
+    Considere que um veículo percorre 14 quilômetros com um litro de gasolina. Informe para o programa a distância de uma viagem e peça para o programa calcular quantos litros de gasolina serão necessários para realizar a viagem e o custo total do combustível.
+    Considere também que a cada 50km haverá um pedágio, no custo de R$ 4,90. Calcule o valor total dos pedágios.
+    Apresente os resultados e também apresente o custo total da viagem (Combústivel + Pedágio).
+    */
+
+    //Entrada
+const distanciaViagem = Number(prompt("Informe quantos kilômetros de distância:"))
+const precoCombustivel = Number(prompt("Informe o valor do combustivel:"))
+    //Processamento
+const gastoCombustivel = (distanciaViagem / 14) * precoCombustivel
+const gastoPedagio = (distanciaViagem / 50) * 4.90
+const gastototal = gastoCombustivel + gastoPedagio
+    //Saída
+    document.write(`</br> Você gastará R$${gastoCombustivel.toFixed(2)} com combustivel`)
+    document.write(`</br> Você gastará R$${gastoPedagio.toFixed(2)} com pedagio`)
+    document.write(`</br> Você gastará R$${gastototal.toFixed(2)} no total para realizar a viagem`)
+</script>

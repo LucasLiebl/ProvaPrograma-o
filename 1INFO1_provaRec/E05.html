@@ -1,0 +1,18 @@
+<script>
+    //Problema
+    /*
+    Considere que o professor da disciplina de Programação realizou três atividades avaliativas ao longo do trimestre.
+    A primeira atividade teve peso 3, segunda atividade teve peso 4 e a terceira atividade teve peso 3.
+    Peça para o usuário informar a nota obtida em cada atividade e apresente a média ponderada que o aluno obteve ao fim do trimestre.
+    */
+
+    //Entrada
+const atv1 = Number(prompt("Informe a nota de sua primeira atividade"))
+const atv2 = Number(prompt("Informe a nota de sua segunda atividade"))
+const atv3 = Number(prompt("Informe a nota de sua terceira atividade"))
+    //Processamento
+const notaFinal = (atv1 *3 + atv2 * 4 + atv3 * 3) /10
+
+    //Saída
+    document.write(`Sua nota final e ${notaFinal.toFixed(1)}`)
+</script>
